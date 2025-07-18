@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+      "tasks": [
+    {
+      "label": "get file",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "repo get -f $(cygpath -u \"${file}\")"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "put file",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "repo put -f $(cygpath -u \"${file}\")"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "get folder",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "repo get -f $(cygpath -u \"${fileDirname}\")"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "put folder",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "repo put -f $(cygpath -u \"${fileDirname}\")"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
